@@ -1,0 +1,14 @@
+{
+    "users": {
+        "master": {
+            "password": "35ba9892f267515f6f0f18f9252dd9cd03ba7537",
+            "balance": "288.00 €",
+            "screen": "Native"
+        },
+        "frontend": {
+            "password": "9f06a35482e4e74972f65b47884065ccc113bd51",
+            "balance": "77.77 €",
+            "screen": "TestWebview"
+        }
+    }
+}
