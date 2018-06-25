@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
     },
     white: {
         color: '#fff',
-        fontSize: 20
+        fontSize: 20,
+        marginRight: 20,
     },
     balance: {
         borderRadius: 5,
