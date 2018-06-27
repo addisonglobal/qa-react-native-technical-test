@@ -9,7 +9,7 @@ class TestWebview extends Component {
         const username = this.props.navigation.getParam('username', 'user');
         const balance = this.props.navigation.getParam('balance', '0');
         const ios = require('./html/index.html');
-        const android = { uri: 'file:///android_asset/html/index.html' }
+        const android = { uri: 'file:///android_asset/html/index.html' };
         const jsScript = `
             document.getElementById("username").innerHTML = "${username}";
             document.getElementById("balance").innerHTML = "${balance}";
