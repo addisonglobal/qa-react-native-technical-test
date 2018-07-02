@@ -27,6 +27,6 @@ export default createStackNavigator(
         }
     },
     {
-      initialRouteName: 'Login',
+        initialRouteName: 'Login',
     }
 );

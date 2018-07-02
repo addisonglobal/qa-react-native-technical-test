@@ -7,6 +7,7 @@ const switchTestId = 'SwitchTestId';
 const balanceViewTestId = 'BalanceViewTestId';
 const balanceTextTestId = 'BalanceTextTestId';
 const homeViewTestId = 'HomeViewTestId';
+const nativeBackHomeTestId = 'NativeBackHome';
 
 const testID = Platform.OS === 'ios' ? {
     username: {
@@ -29,7 +30,10 @@ const testID = Platform.OS === 'ios' ? {
     },
     homeView: {
         testID: homeViewTestId,
-    }
+    },
+    nativeBackHome: {
+        testID: nativeBackHomeTestId,
+    },
 } : {
     username: {
         accessibilityLabel: loginUsernameTestId,
@@ -51,7 +55,10 @@ const testID = Platform.OS === 'ios' ? {
     },
     homeView: {
         accessibilityLabel: homeViewTestId,
-    }
+    },
+    nativeBackHome: {
+        accessibilityLabel: nativeBackHomeTestId,
+    },
 };
 
 export default testID;
