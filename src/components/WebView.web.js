@@ -32,15 +32,18 @@ class TestWebview extends Component {
     }
 
     render() {
-        const username = this.props.location.state.username;
-        const balance = this.props.location.state.balance;
+        const { username, balance } = this.props.location.state;
         const jsScript = `
-            document.getElementById("username").innerHTML = ${username};
-            document.getElementById("balance").innerHTML = ${balance};
-        `;
+            document.getElementById("username").innerHTML = '${username}';
+            document.getElementById("balance").innerHTML = '${balance}';`;
         const source = {
             uri: './html/index.html',
+            method: 'GET',
+            header: {
+                'Type-Content': 'text/html',
+            },
         };
+
 
         return (
             <View style={styles.container}>
