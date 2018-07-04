@@ -30,7 +30,7 @@ Please use credentials from `Valid users` section of this doc.
 > **Put all your thoughts inside the answer!!**
 
 It is not required to create additional scenarios, but any extra work will be considered as a plus. Would be great to use boundary testing!)
-Please document and let us know how would you implement any extra relevant feature that is not covered in the test (reporting, logging ...) 
+Please document and let us know how would you implement any extra relevant feature that is not covered in the test (reporting, logging ...)
 
 ## Deliverable
 * **Source Code**: Either of the following ways to bundle the code, whatever is easier for you:
@@ -73,6 +73,17 @@ yarn --version
 In case you haven't installed Yarn, you can follow the instruction to install in your OS:
 [How to install Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
 
+##### `npm install`
+
+It is the first command that you have to run for install required packages to run the application.
+
+```
+npm install
+# or
+yarn install
+```
+
+
 #### `npm start`
 ```
 npm start --reset-cache
@@ -103,6 +114,17 @@ npm run android
 # or
 yarn android
 ```
+
+#### `npm run web`
+
+```
+npm run web
+# or
+yarn web
+```
+
+You can find the project running at _http://localhost:8080/_
+
 
 #### `Builds Path`
 
