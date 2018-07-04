@@ -26,7 +26,8 @@
     "web": "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
     "buildWeb": "webpack -p --config ./web/webpack.config.js",
     "test": "jest",
-    "bundle": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "bundleAndroid": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "bundleIOS": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios",
     "clean": "npm update && npm cache clean --force && rm -rf node_modules && yarn install"
   },
   "jest": {
