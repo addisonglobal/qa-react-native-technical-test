@@ -45,7 +45,7 @@ class Login extends PureComponent {
                         source={{ uri: imageUri }}
                     />
                 </View>
-                <View style={styles.form}>
+                <View style={styles.form} id="test" className="test2">
                     <TextInput style={[styles.input, errors ? styles.inputError : null]}
                                value={username}
                                type='text'
@@ -99,13 +99,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flex: 1,
         justifyContent: 'center',
-        width: 500,
-        height: 500
+        width: 300,
+        height: 300
     },
     logo: {
         position: 'absolute',
-        height: 450,
-        width: 450,
+        height: 300,
+        width: 300,
     },
     form: {
         padding: 20,

@@ -9,7 +9,7 @@ const balanceTextTestId = 'BalanceTextTestId';
 const homeViewTestId = 'HomeViewTestId';
 const nativeBackHomeTestId = 'NativeBackHome';
 
-const testID = Platform.OS === 'ios' ? {
+const testID = Platform.OS === 'ios' || Platform.OS === 'web' ? {
     username: {
         testID: loginUsernameTestId,
     },
